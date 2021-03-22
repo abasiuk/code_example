@@ -1,4 +1,4 @@
-# GAS-MAP
+# Code Example
 
 ## Build Setup
 
