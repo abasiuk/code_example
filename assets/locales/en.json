@@ -1,0 +1,16 @@
+{
+  "base": {
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "save": "Save",
+    "search": "Search",
+    "placeholder": "Enter text...",
+    "listIsEmpty": "List is empty",
+    "data": "Data on",
+    "calc": "To calculate",
+    "cashIsEmpty": "CashBox is empty :("
+  },
+  "errors": {
+    "sum": "Can't to calculate selected sum"
+  }
+}

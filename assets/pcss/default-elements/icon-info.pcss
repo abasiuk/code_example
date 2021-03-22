@@ -1,0 +1,25 @@
+.icon-info {
+  @apply text-lg border-b border-gray border-opacity-20 pb-6 mb-5;
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__img {
+    max-width: 40px;
+    max-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  &__desc {
+    @apply pl-7;
+  }
+}

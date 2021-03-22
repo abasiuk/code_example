@@ -1,0 +1,91 @@
+.modal{
+  padding-top: 60px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  &__close-btn{
+    top: 16px;
+    right: 16px;
+  }
+  &__title{
+    margin-bottom: 16px;
+    text-align: center;
+    &--small{
+      font-size: 18px;
+      margin-bottom: 28px;
+    }
+    &--left{
+      text-align: left;
+    }
+  }
+  &__image{
+    display: block;
+    margin: 0 auto 20px;
+  }
+  &__container{
+  //position: relative;
+  //overflow-y: auto;
+    height: 100%;
+    padding: 0 40px;
+    &--indent{
+      padding: 0 48px;
+    }
+    &--clear {
+      padding: 0;
+    }
+    &--scroll{
+      overflow-y: auto;
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+  }
+  &__form{
+  //overflow-y: auto;
+    max-width: 320px;
+    margin:auto;
+    &--double{
+      max-width: 664px;
+    }
+  }
+  &__formgroup{
+    &:not(:last-child){
+      margin-bottom: 24px;
+    }
+  }
+  &__footer{
+    margin-top: 24px;
+    padding: 0 24px 36px;
+    display: flex;
+    align-items: center;
+    &--indent {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+    &-buttons{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      &--right{
+        justify-content:flex-end;
+      }
+    }
+    &-btn{
+      width: 170px;
+      &--center{
+        margin:auto;
+      }
+    }
+  }
+}

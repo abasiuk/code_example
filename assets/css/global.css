@@ -1,0 +1,42 @@
+/*custom modal styles*/
+/* DON'T TOUCH NEXT LINE!!! */
+.v--modal {
+  border-radius: 12px!important;
+}
+.v--modal-overlay[data-modal="Sidebar"] .v--modal{
+  border-top-left-radius: 0!important;
+  border-bottom-left-radius: 0!important;
+}
+.v--modal-overlay {
+  background: transparent!important;
+}
+
+.v--modal-overlay[data-modal="MainSearchModal"] {
+  top: 70px;
+  height: calc(100vh - 162px);
+}
+
+.v--transition--slide-enter-active {
+  transition: all .3s ease;
+}
+.v--transition--slide-leave-active {
+  transition: all .8s ease;
+}
+.v--transition--slide-enter, .v--transition--slide-leave-to
+  /* .slide-fade-leave-active до версии 2.1.8 */ {
+  transform: translateX(-414px);
+  opacity: 0;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar, *::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track, *::-webkit-scrollbar-track {
+   background: transparent;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb, *::-webkit-scrollbar-thumb {
+   background: transparent;
+}

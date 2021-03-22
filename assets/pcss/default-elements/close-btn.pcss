@@ -1,0 +1,24 @@
+.close-btn{
+  @apply text-brand-gray text-sm font-semibold;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  letter-spacing: 0.4px;
+  &:before, &:after{
+    @apply bg-gray inset-0;
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    margin: auto;
+  }
+  &:before{
+    transform: rotate(45deg);
+  }
+  &:after{
+    transform: rotate(-45deg);
+  }
+}

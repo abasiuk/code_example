@@ -1,0 +1,22 @@
+.default-arrow{
+  position: relative;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    transform: rotate(0deg);
+    background: url('~assets/images/arrow.svg') center no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    transition: transform .3s ease-in-out;
+  }
+  &--open{
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
